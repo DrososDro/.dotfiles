@@ -22,6 +22,7 @@
     "modules-center": ["hyprland/window"],
 
     "modules-right": ["tray", 
+    "battery",
 	"network", 
 	"pulseaudio", 
 	"clock",
