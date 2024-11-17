@@ -12,6 +12,7 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/xaos/.oh-my-zsh"
+export QT_QPA_PLATFORM=xcb
 
 
 # Set name of the theme to load --- if set to "random", it will
