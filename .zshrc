@@ -14,6 +14,19 @@ fi
 export ZSH="/home/xaos/.oh-my-zsh"
 export QT_QPA_PLATFORM=xcb
 
+function c++() {
+  local full_name=$1
+  local name=${full_name%%.*}
+  gcc -Wall -g -lstdc++ $full_name -o $name
+  ./$name
+}
+function c() {
+  local full_name=$1
+  local name=${full_name%%.*}
+  gcc -Wall -g $full_name -o $name
+  ./$name
+}
+
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -129,6 +142,7 @@ alias docker_prune='docker system prune --volumes -a'
 # alias dct="docker-compose run --rm app sh -c 'pytest . '"
 alias docker_clean_images='docker rmi $(docker images -a --filter=dangling=true -q)'
 alias docker_clean_ps='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
+alias br0='sudo ip link add name br0 type bridge && sudo ip link set dev enp47s0f3u3c2 master br0 && sudo ip link set dev br0 up '
 alias secret_key='python -c "import secrets; print(secrets.token_urlsafe(38))"'
 
 # export DB_HOST="localhost"
