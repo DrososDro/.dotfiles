@@ -23,7 +23,7 @@ function c++() {
 function c() {
   local full_name=$1
   local name=${full_name%%.*}
-  gcc -Wall -g $full_name -o $name
+  gcc -Wall -std=c89 -g $full_name -o $name
   ./$name
 }
 
