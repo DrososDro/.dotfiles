@@ -14,16 +14,16 @@ fi
 export ZSH="/home/xaos/.oh-my-zsh"
 export QT_QPA_PLATFORM=xcb
 
-function c++() {
+function ccc() {
   local full_name=$1
   local name=${full_name%%.*}
-  gcc -Wall -g -lstdc++ $full_name -o $name
+  gcc -Wall -g -lstdc++ $@ -o $name
   ./$name
 }
 function c() {
   local full_name=$1
   local name=${full_name%%.*}
-  gcc -Wall -std=c89 -g $full_name -o $name
+  gcc -Wall -g $@ -o $name
   ./$name
 }
 
@@ -98,6 +98,7 @@ plugins=(
 	git
 	zsh-syntax-highlighting	
 	zsh-autosuggestions
+    colored-man-pages
 	)
 
 source $ZSH/oh-my-zsh.sh
