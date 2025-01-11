@@ -1,0 +1,15 @@
+dconf/
+google-chrome-unstable/
+gtk-3.0/
+keepassxc/
+nautilus/
+nwg-look/
+pulse/
+qt5ct/
+qt6ct/
+systemd/
+xsettingsd/
+pavucontrol.ini
+QtProject.conf
+user-dirs.dirs
+user-dirs.locale
