@@ -17,6 +17,7 @@
   switch_to_tab_5 = <Alt>5
   switch_to_tab_6 = <Alt>6
   switch_to_tab_7 = <Alt>7
+  help = F12
 [profiles]
   [[default]]
     audible_bell = True

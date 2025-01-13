@@ -117,7 +117,8 @@
     },
     "network": {
         "format-wifi": "{icon}",
-        "format-ethernet": "🖧",
+        //"format-ethernet": "🖧",
+        "format-ethernet": "",
         "format-disconnected": "󰤭",
         "tooltip-format": "{essid}",
        // "on-click": "~/.config/waybar/scripts/rofi_network",
